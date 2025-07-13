@@ -3,14 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA4hOWrjb1ZvTo4cTOOTyTBSPQAJMYr7K4",
-  authDomain: "bharatsetu-567b3.firebaseapp.com",
-  projectId: "bharatsetu-567b3",
-  storageBucket: "bharatsetu-567b3.firebasestorage.app",
-  messagingSenderId: "97864290872",
-  appId: "1:97864290872:web:30bf9161cb7ebceba34ccd"
-};
+// const firebaseConfig = {
+//   apiKey: <your_api_key>,
+//   authDomain: <add_yours>,
+//   projectId: <add_project_id>,
+//   storageBucket: <add_storage_bucket>,
+//   messagingSenderId: <add_sender_id>,
+//   appId: <add_api_id>
+// };
 
 const app = initializeApp(firebaseConfig);
 
