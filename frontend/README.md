@@ -12,4 +12,5 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 // To start the server, run the following command in integrated terminal of backend folder -> node -r dotenv/config app.js
+
 // To run the frontend, run the following command in integrated terminal of frontend folder -> npm run dev
