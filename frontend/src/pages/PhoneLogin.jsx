@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { auth } from '../firebase-config';
+import { auth } from '../firebaseConfig';
 import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
 import { useNavigate, Link } from 'react-router-dom';
 

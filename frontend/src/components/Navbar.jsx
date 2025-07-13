@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { auth } from "../firebase-config";
+import { auth } from "../firebaseConfig";
 import { signOut } from "firebase/auth";
 
 export default function Navbar() {
@@ -33,10 +33,10 @@ export default function Navbar() {
           </>
         ) : (
           <>
-            <Link to="/login" className="hover:text-teal-700 font-medium">Login</Link>
+            <Link to="/login" className="hover:text-teal-700 font-medium text-lg">Login</Link>
             <Link
               to="/signup"
-              className="text-white bg-blue-600 px-4 py-1.5 rounded-full hover:bg-blue-700 transition"
+              className="text-white bg-blue-600 px-4 py-1.5 rounded-full hover:bg-blue-700 transition text-lg"
             >
               Sign Up
             </Link>

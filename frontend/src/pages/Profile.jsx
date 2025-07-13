@@ -57,7 +57,7 @@ export default function ProfilePage() {
             alt="Avatar"
             className="rounded-full w-40 h-40 border-8 border-teal-700 shadow mb-4 object-cover"
           />
-          <h2 className="text-center text-3xl font-bold text-gray-800 mb-1">
+          <h2 className="text-center text-xl font-bold text-gray-800 mb-1">
             {user.email}
           </h2>
           <p className="text-xl text-gray-700 mb-4">Citizen</p>

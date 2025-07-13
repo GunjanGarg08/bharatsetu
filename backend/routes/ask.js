@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
         { role: 'user', content: question }
       ],
       temperature: 0.7,
-      max_tokens: 512
+      max_tokens: 300
     });
 
     const answer = completion.choices?.[0]?.message?.content || 'Sorry, I could not generate a response.';
