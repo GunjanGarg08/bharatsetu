@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import heroImg from "../assets/hero.png";
 import aiChatbot from "../assets/ai-chatbot.png";
 import multilingual from "../assets/multilingual.png";
@@ -36,12 +37,12 @@ const LandingPage = () => {
             Access legal support and resources quickly and efficiently through
             our AI-driven platform.
           </p>
-          <a
-            href="/signup"
+          <Link
+            to="/signup"
             className="bg-teal-700 hover:bg-teal-800 text-white font-bold px-6 py-3 rounded-lg ml-8 text-lg"
           >
             Get Started
-          </a>
+          </Link>
         </div>
         <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <img src={heroImg} alt="Hero Banner" className="w-full max-w-xl" />
@@ -215,7 +216,6 @@ const LandingPage = () => {
         </h2>
 
         <div className="flex flex-col items-center gap-5 max-w-md mx-auto">
-
           <div className="bg-[#78dbcf] w-74 rounded-xl shadow-md p-9 text-center border border-[#5bc0be]">
             <img
               src={robotIcon}
@@ -348,12 +348,12 @@ const LandingPage = () => {
         <p className="mb-8">
           Join thousands of citizens using AI for their legal needs.
         </p>
-        <a
-          href="/signup"
+        <Link
+          to="/signup"
           className="inline-block bg-white text-teal-800 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 text-lg"
         >
           Get Started
-        </a>
+        </Link>
       </section>
 
       {/* Footer */}

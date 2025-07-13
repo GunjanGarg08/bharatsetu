@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import askBackground from '../assets/ask-background.png';
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const languagePlaceholders = {
   Hindi: 'उदाहरण: मुझे tenant से notice मिला है, क्या करूं?',
@@ -26,7 +28,7 @@ const AskQuestion = () => {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:5000/api/ask', {
+      const res = await fetch(`${API_BASE}/api/ask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question, language })
@@ -46,7 +48,7 @@ const AskQuestion = () => {
   };
 
   return (
-    <div className="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10" style={{ backgroundImage: `url('/src/assets/ask-background.png')` }}>
+    <div className="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10" style={{ backgroundImage: `url(${askBackground})` }}>
       <div className="fixed inset-0 bg-white/30 backdrop-blur-0 z-0"/>
       <div className="bg-white/30 backdrop-blur-xl shadow-2xl rounded-3xl p-8 max-w-xl w-full border border-white/50">
         <div className="mb-6 text-center">

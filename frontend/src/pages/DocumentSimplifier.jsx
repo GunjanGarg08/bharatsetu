@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
+import simplifyBackground from '../assets/simplify-background.png';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
@@ -85,7 +86,7 @@ const DocumentSimplifier = () => {
       <div
         className="h-full max-w-2xl bg-[#c8fdf7] bg-opacity-90 rounded-3xl p-10 shadow-2xl text-center relative"
         style={{
-          backgroundImage: `url('/src/assets/simplify-background.png')`,
+          backgroundImage: `url(${simplifyBackground})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right",
           backgroundSize: "contain",
