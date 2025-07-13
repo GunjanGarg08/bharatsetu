@@ -41,4 +41,4 @@ npm run dev
 
 
 // To start the server, run the following command in integrated terminal of backend folder -> node -r dotenv/config app.js
-//To run the frontend, run the following command in integrated terminal of frontend folder -> npm run dev
+// To run the frontend, run the following command in integrated terminal of frontend folder -> npm run dev
