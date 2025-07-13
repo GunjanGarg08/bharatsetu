@@ -3,15 +3,6 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// const firebaseConfig = {
-//   apiKey: <your_api_key>,
-//   authDomain: <add_yours>,
-//   projectId: <add_project_id>,
-//   storageBucket: <add_storage_bucket>,
-//   messagingSenderId: <add_sender_id>,
-//   appId: <add_api_id>
-// };
-
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
